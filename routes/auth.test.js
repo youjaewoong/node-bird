@@ -11,8 +11,8 @@ describe('POST /join', () => {
     request(app)
       .post('/auth/join')
       .send({
-        email: 'zerohch0@gmail.com',
-        nick: 'zerocho',
+        email: 'easy-to-do@gmail.com',
+        nick: 'easy-to-do',
         password: 'nodejsbook',
       })
       .expect('Location', '/')
@@ -26,7 +26,7 @@ describe('POST /login', () => {
     agent
       .post('/auth/login')
       .send({
-        email: 'zerohch0@gmail.com',
+        email: 'easy-to-do@gmail.com',
         password: 'nodejsbook',
       })
       .end(done);
@@ -37,8 +37,8 @@ describe('POST /login', () => {
     agent
       .post('/auth/join')
       .send({
-        email: 'zerohch0@gmail.com',
-        nick: 'zerocho',
+        email: 'easy-to-do@gmail.com',
+        nick: 'easy-to-do',
         password: 'nodejsbook',
       })
       .expect('Location', `/?error=${message}`)
@@ -63,7 +63,7 @@ describe('POST /login', () => {
     request(app)
       .post('/auth/login')
       .send({
-        email: 'zerohch0@gmail.com',
+        email: 'easy-to-do@gmail.com',
         password: 'nodejsbook',
       })
       .expect('Location', '/')
@@ -75,7 +75,7 @@ describe('POST /login', () => {
     request(app)
       .post('/auth/login')
       .send({
-        email: 'zerohch0@gmail.com',
+        email: 'easy-to-do@gmail.com',
         password: 'wrong',
       })
       .expect('Location', `/?loginError=${message}`)
@@ -95,7 +95,7 @@ describe('GET /logout', () => {
     agent
       .post('/auth/login')
       .send({
-        email: 'zerohch0@gmail.com',
+        email: 'easy-to-do@gmail.com',
         password: 'nodejsbook',
       })
       .end(done);

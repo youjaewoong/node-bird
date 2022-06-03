@@ -17,7 +17,7 @@
       "post": {
         "url": "/auth/login",
         "json": {
-          "email": "zerohch0@naver.com",
+          "email": "easy-to-do@naver.com",
           "password": "nodejsbook"
         }
       }

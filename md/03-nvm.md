@@ -12,7 +12,7 @@
 $ nvm install 14.1.0
 Downloading node.js version 14.1.0 (64-bit).. .
 Complete
-Creating C:\Users\zerocho\AppData\Roaming\nvm\temp
+Creating C:\Users\easy-to-do\AppData\Roaming\nvm\temp
 
 Downloading npm version 6.14.4.. . Complete
 Installing npm v6.14.4...
