@@ -38,8 +38,10 @@ const upload = multer({
 
 //s3 address img call
 router.post('/img', isLoggedIn, upload.single('img'), (req, res) => {
-  console.log('req.file :: ', req.file);
-  res.json({ url: req.file.location });
+  console.log(req.file);
+  const originalUrl = req.file.location;
+  const url = originalUrl.replace(/\/original\//, '/thumb/');
+  res.json({ url, originalUrl: req.file.location });
 });
 
 
