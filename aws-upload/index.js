@@ -16,7 +16,7 @@ exports.handler = async (event, context, callback) => {
     const s3Object = await s3.getObject({ Bucket, Key }).promise(); // 버퍼로 가져오기
     console.log('original', s3Object.Body.length); // 이미지의 용량
     const resizedImage = await sharp(s3Object.Body) // 리사이징
-      .resize(400, 400, { fit: 'inside' }) // 비율을 유지하면서 꽉차게 (inside)
+      .resize(200, 200, { fit: 'inside' }) // 비율을 유지하면서 꽉차게 (inside)
       .toFormat(requiredFormat)
       .toBuffer();
     await s3.putObject({ // thumb 폴더에 저장

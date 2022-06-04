@@ -57,9 +57,8 @@ npx sequelize db:create --env production
 ```
 
 ### 해당 프로젝트 실행
-```
-sudo npm start && sudo npx pm2 monit
-```
+`sudo npm start && sudo npx pm2 monit`
+`sudo npx pm2 reload all && sudo npx pm2 monit`
 
 ### etc
 #### 보안상 위협되는 package install
