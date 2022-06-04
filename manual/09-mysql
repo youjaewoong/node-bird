@@ -1,0 +1,18 @@
+
+### MySql 외부에서 접속할 수 있게 세팅하기
+https://yangeok.github.io/devops/2019/01/30/mysql-external-connection.html
+
+### default tables
+```
+select * from nodebird.posts
+
+select * from nodebird.users
+
+select * from nodebird.hashtags
+
+select * from nodebird.hashtags
+
+select * from nodebird.PostHashtag
+
+select * from nodebird.Follow
+```
